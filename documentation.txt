@@ -1,0 +1,42 @@
+Document structure QMS Backend - Quality Management System 
+
+----------------------------------------------------------
+FOLDER STRUKTURE
+=> Config
+    Didalam Folder Config untuk mensetting Databases
+
+=> Controllers
+    => dashboard    : API untuk dashboard
+    => items        : API untuk M 6269 - 01
+    => items2       : API untuk M 6269 - 02
+    => RefreshToken : API untuk RefreshToken
+    => reports      : API untuk Hasil Report items M 6269 - 01
+    => Users        : API untuk Register, Login, dan Logout
+
+=> middleware
+    => VerifyToken  : Untuk Verify Token setiap API
+
+=> Models
+    => ItemModel    : Data Model buat M 6269 - 01
+    => ItemModel2   : Data Model buat M 6269 - 02
+    => userModel    : Data Model untuk user
+    => reportModel  : Data Model untuk hasil report dari  M 6269 - 01
+
+=> routes
+    => ItemRoute    : Routes restAPI 
+
+Note*
+1. Untuk Melanjutkan M 6269 - 02 bisa diliat 
+dari Controllers > items. dikarenakan untuk mengambil 
+data FTP dan DAT to CSV disitu.
+
+2. Jika Data sudah bukan dummy silahkan pergi ke controllers > items.
+ganti Get.FTP('Copy_M6269_01') menjadi Get.FTP('M6269_01') dikarenakan data yang di ambil dalam 
+bentuk DAT saja agar lebih optimal dalam pengambilan datanya.
+
+3. untuk M 6269 - 02 silahkan bisa lanjutkan di controllers > items2
+
+4. untuk Report hasil M 6269 - 02 silahkan buat di folder Model > reportModel2. 
+untuk lebih lanjutnya bisa lihat di reportModel
+
+
